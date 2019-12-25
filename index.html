@@ -48,7 +48,8 @@
 		}
 		.mybox{
 			position: fixed;
-			z-index: 8;
+			z-index: 99;
+			display: none;
 			width: 100%;
 		}
 		.con{
@@ -260,13 +261,14 @@
 						$('.all').css("z-index","1");
 
 						// $('#mymusic').attr({"muted":"muted","loop":"loop"});
+						$('.mybox').show()
 						$('.all').addClass('rubberBand');
 						$('#myvideo')[0].play();
 						$('#mymusic').hide(500);
 						$('#mymusic1')[0].play();
 						$('.header').addClass('rubberBand');
 						$('.con').addClass('bounceInUp');
-					},1000)
+					},19000)
 
 				}else{
 					$(this).removeClass('music');
